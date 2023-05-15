@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `UTAH` (
   `CId` int NOT NULL,
-  `Name` text NOT NULL,
+  `CityName` text NOT NULL,
   `Population` int NOT NULL,
   `Homes` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -38,7 +38,7 @@ CREATE TABLE `UTAH` (
 -- Dumping data for table `UTAH`
 --
 
-INSERT INTO `UTAH` (`CId`, `Name`, `Population`, `Homes`) VALUES
+INSERT INTO `UTAH` (`CId`, `CityName`, `Population`, `Homes`) VALUES
 (101, 'Salt Lake City', 199153, 88155),
 (102, 'West Valley City', 139361, 43656),
 (103, 'West Jordan', 116045, 35516),

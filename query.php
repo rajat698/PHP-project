@@ -1,4 +1,11 @@
+<form action = "query.php" method = "post">
+   City: <input type = "text" name = "city", value = "city">
+   <input type = "submit">
+    </form>
+
 <?php
+
+$city = $_POST["city"];
 
 $connect = mysqli_connect(
     'db',
@@ -9,7 +16,7 @@ $connect = mysqli_connect(
 
 $table_name = "UTAH";
 
-$query = "SELECT * FROM $table_name";
+$query = "SELECT * FROM $table_name WHERE CityName = '$city' ";
 
 $response = mysqli_query($connect, $query);
 
