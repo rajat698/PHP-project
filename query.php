@@ -55,7 +55,7 @@ $connect = mysqli_connect(
 
 $table_name = "UTAH";
 
-$query = "SELECT * FROM $table_name WHERE CityName = '$city' ";
+$query = "SELECT DISTINCT * FROM $table_name WHERE CityName = '$city' ";
 
 $response = mysqli_query($connect, $query);
 
